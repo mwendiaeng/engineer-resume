@@ -177,7 +177,7 @@ export default function Home() {
               title="Founder & Software Engineer"
               company="Datalyft Analytics"
               location="Remote, Kenya"
-              period="Jun 2024 – Present"
+              period="Jun 2025 – Present"
               responsibilities={[
                 "Architected and developed scalable full-stack applications for external clients, leading the entire product development lifecycle from concept to deployment.",
                 "Designed and implemented advanced AI/ML models for media verification, including a Python-based deepfake video detection tool, directly aligning with modern security and data integrity requirements.",
