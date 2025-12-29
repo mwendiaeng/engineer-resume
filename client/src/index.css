@@ -157,6 +157,83 @@
     margin: 0 auto;
   }
 }
+
+/* Print media rules for PDF export */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Kill decorative overlays and background layers */
+  .absolute,
+  .bg-gradient-to-b {
+    display: none !important;
+  }
+
+  /* Hide floating print button */
+  .fixed {
+    display: none !important;
+  }
+
+  /* Remove viewport height constraints */
+  .min-h-screen {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  /* Tighten spacing for print */
+  .mb-16 { margin-bottom: 12px !important; }
+  .mb-4 { margin-bottom: 4px !important; }
+  .mb-6 { margin-bottom: 6px !important; }
+  .py-16 { padding-top: 8px !important; padding-bottom: 8px !important; }
+  .py-10 { padding-top: 6px !important; padding-bottom: 6px !important; }
+
+  /* Shrink typography for print */
+  h1 { font-size: 22px !important; margin-bottom: 4px !important; }
+  h2 { font-size: 14px !important; margin-bottom: 6px !important; }
+  h3 { font-size: 12px !important; margin-bottom: 4px !important; }
+  p, li { font-size: 10.5px !important; line-height: 1.25 !important; }
+
+  /* Allow page breaks between sections */
+  section {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  /* Only protect items that must stay together */
+  .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove shadows and hover artifacts */
+  .shadow-lg, .hover\:shadow-xl, .hover\:shadow-sm {
+    box-shadow: none !important;
+  }
+
+  /* Clean link styling for print */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  /* Ensure fade-in doesn't hide content */
+  .fade-in {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+}
 @media print {
   @page {
     size: A4;

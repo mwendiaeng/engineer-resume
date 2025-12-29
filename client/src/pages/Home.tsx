@@ -48,9 +48,10 @@ export default function Home() {
           backgroundRepeat: 'repeat'
         }}
       />
+  <div className="resume">
 
       {/* Hero section with elegant background */}
-      <section className="relative min-h-[45vh] flex items-center justify-center">
+      <section className="relative flex items-center justify-center py-10 md:py-16">
         <div 
           className="absolute inset-0 opacity-30"
           style={{
@@ -280,7 +281,7 @@ export default function Home() {
         </Button>
       </div>
 
-      {/* Print styles */}
+      {/* Screen-only animations */}
       <style>{`
         .fade-in {
           opacity: 0;
@@ -294,28 +295,8 @@ export default function Home() {
           filter: blur(0);
           transform: translateY(0);
         }
-
-        @media print {
-          .fixed {
-            display: none !important;
-          }
-          
-          body {
-            background: white !important;
-          }
-          
-          .fade-in {
-            opacity: 1 !important;
-            filter: none !important;
-            transform: none !important;
-          }
-          
-          section {
-            page-break-inside: avoid;
-            margin-bottom: 2rem !important;
-          }
-        }
       `}</style>
+      </div>
     </div>
   );
 }
@@ -355,7 +336,7 @@ function ExperienceItem({
   responsibilities: string[];
 }) {
   return (
-    <div className="relative pl-8 border-l-2 border-accent/30">
+    <div className="print-avoid-break relative pl-8 border-l-2 border-accent/30">
       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
       
       <div className="mb-2">
@@ -389,7 +370,7 @@ function ProjectItem({
   link: string;
 }) {
   return (
-    <div className="group">
+    <div className="print-avoid-break group">
       <div className="flex items-start justify-between gap-4 mb-2">
         <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors duration-300">
           {title}
