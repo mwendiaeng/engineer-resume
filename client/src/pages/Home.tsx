@@ -187,9 +187,9 @@ export default function Home() {
 
             <ExperienceItem
               title="Software Engineer"
-              company="Mwewasco (Government Institution)"
-              location="Nairobi, Kenya"
-              period="Sep 2024 – Present"
+              company="Mwewasco"
+              location="Murang'a, Kenya"
+              period="Oct 2025 – Present"
               responsibilities={[
                 "Architected and developed Water Audit Software: full-stack Dockerized system (Django REST, PostgreSQL, Celery, Redis, Nginx) for bulk CSV ingestion, data analysis, and reporting.",
                 "Designed async task pipeline with Celery for processing large CSV files (age analysis, account balances, verification reports) with real-time progress tracking and error logging.",
@@ -200,9 +200,9 @@ export default function Home() {
 
             <ExperienceItem
               title="Full-Stack Developer"
-              company="Talent Lance (Client Project)"
+              company="Talent Lance"
               location="Remote"
-              period="Aug 2024 – Present"
+              period="Aug 2025 – Dec 2025"
               responsibilities={[
                 "Developed marketplace backend (Django DRF) with custom user model, role-based access control (admin/developer/client), and multi-tenant architecture.",
                 "Designed ticketing system with workflow automation, developer assignment, file attachments, and validation; built CMS for FAQs and tips.",
