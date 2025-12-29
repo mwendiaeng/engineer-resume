@@ -50,7 +50,7 @@ export default function Home() {
       />
 
       {/* Hero section with elegant background */}
-      <section className="relative min-h-[60vh] flex items-center justify-center">
+      <section className="relative min-h-[45vh] flex items-center justify-center">
         <div 
           className="absolute inset-0 opacity-30"
           style={{
@@ -61,16 +61,16 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
         
-        <div className="relative z-10 max-w-[720px] mx-auto px-6 py-24 text-center">
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 tracking-tight">
+        <div className="relative z-10 max-w-[720px] mx-auto px-6 py-16 text-center">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-3 tracking-tight">
             Peter Mwendia
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium mb-12">
+          <p className="text-lg md:text-xl text-muted-foreground font-medium mb-6">
             Django Backend Developer
           </p>
           
           {/* Contact information */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base text-muted-foreground mb-8">
+          <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-muted-foreground mb-4">
             <a 
               href="mailto:ptermwendia@gmail.com" 
               className="flex items-center gap-2 hover:text-accent transition-colors duration-300"
@@ -120,27 +120,27 @@ export default function Home() {
       </section>
 
       {/* Main content */}
-      <main className="max-w-[720px] mx-auto px-6 pb-24">
+      <main className="max-w-[720px] mx-auto px-6 pb-12">
         
         {/* Professional Summary */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Professional Summary
           </h2>
-          <div className="divider-elegant mb-12" />
-          <p className="text-lg leading-relaxed text-foreground/90">
+          <div className="divider-elegant mb-6" />
+          <p className="text-base leading-relaxed text-foreground/90">
             Results-driven and highly skilled Django Backend Developer with 2+ years of experience in designing, developing, and deploying scalable and efficient web applications. Proven expertise in Python, Django, RESTful APIs, and database management, with hands-on experience in cloud platforms (AWS/GCP) and containerization using Docker. A collaborative team player with excellent communication skills, adept at working in cross-cultural environments and delivering high-quality software solutions that meet client needs.
           </p>
         </section>
 
         {/* Skills */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Technical Skills
           </h2>
-          <div className="divider-elegant mb-12" />
+          <div className="divider-elegant mb-6" />
           
-          <div className="space-y-8">
+          <div className="space-y-4">
             <SkillCategory 
               title="Languages" 
               skills={["Python", "JavaScript", "SQL"]} 
@@ -165,13 +165,13 @@ export default function Home() {
         </section>
 
         {/* Professional Experience */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Professional Experience
           </h2>
-          <div className="divider-elegant mb-12" />
+          <div className="divider-elegant mb-6" />
           
-          <div className="space-y-16">
+          <div className="space-y-8">
             <ExperienceItem
               title="Founder & Software Engineer"
               company="Datalyft Analytics"
@@ -210,13 +210,13 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Featured Projects
           </h2>
-          <div className="divider-elegant mb-12" />
+          <div className="divider-elegant mb-6" />
           
-          <div className="space-y-12">
+          <div className="space-y-6">
             <ProjectItem
               title="Django Mpesa Integration"
               description="Developed a web application that integrates the Mpesa payment gateway with Django, enabling seamless and secure mobile money transactions. This project includes secure transaction processing and a RESTful API for mobile development."
@@ -232,11 +232,11 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Education
           </h2>
-          <div className="divider-elegant mb-12" />
+          <div className="divider-elegant mb-6" />
           
           <div className="text-center">
             <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -252,13 +252,13 @@ export default function Home() {
         </section>
 
         {/* Certifications */}
-        <section ref={addToRefs} className="mb-32 fade-in">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
+        <section ref={addToRefs} className="mb-16 fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
             Professional Certifications
           </h2>
-          <div className="divider-elegant mb-12" />
+          <div className="divider-elegant mb-6" />
           
-          <div className="space-y-4 text-center">
+          <div className="space-y-2 text-center">
             <CertificationItem title="Meta Back-End Developer Professional Certificate" />
             <CertificationItem title="Meta Database Engineer Professional Certificate" />
             <CertificationItem title="Meta Programming with Python" />
@@ -323,12 +323,12 @@ export default function Home() {
 function SkillCategory({ title, skills }: { title: string; skills: string[] }) {
   return (
     <div>
-      <h3 className="text-lg font-semibold text-accent mb-3">{title}</h3>
-      <div className="flex flex-wrap gap-2">
+      <h3 className="text-base font-semibold text-accent mb-2">{title}</h3>
+      <div className="flex flex-wrap gap-1.5">
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="px-4 py-2 bg-card text-foreground border border-border rounded-md text-sm hover:border-accent hover:shadow-sm transition-all duration-300"
+            className="px-3 py-1 bg-card text-foreground border border-border rounded-md text-xs hover:border-accent hover:shadow-sm transition-all duration-300"
             style={{
               animation: `fadeIn 0.5s ease-out ${index * 0.08}s backwards`
             }}
@@ -358,19 +358,19 @@ function ExperienceItem({
     <div className="relative pl-8 border-l-2 border-accent/30">
       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
       
-      <div className="mb-3">
-        <h3 className="text-xl font-semibold text-foreground mb-1">{title}</h3>
-        <p className="text-accent font-semibold mb-1">{company}</p>
-        <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+      <div className="mb-2">
+        <h3 className="text-lg font-semibold text-foreground mb-0.5">{title}</h3>
+        <p className="text-accent font-semibold text-sm mb-0.5">{company}</p>
+        <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
           <span>{location}</span>
           <span>•</span>
           <span>{period}</span>
         </div>
       </div>
       
-      <ul className="space-y-3">
+      <ul className="space-y-2">
         {responsibilities.map((resp, index) => (
-          <li key={index} className="text-foreground/90 leading-relaxed">
+          <li key={index} className="text-sm text-foreground/90 leading-snug">
             {resp}
           </li>
         ))}
@@ -390,8 +390,8 @@ function ProjectItem({
 }) {
   return (
     <div className="group">
-      <div className="flex items-start justify-between gap-4 mb-3">
-        <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors duration-300">
+      <div className="flex items-start justify-between gap-4 mb-2">
+        <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors duration-300">
           {title}
         </h3>
         <a 
@@ -400,10 +400,10 @@ function ProjectItem({
           rel="noopener noreferrer"
           className="text-accent hover:text-accent/80 transition-colors duration-300 flex-shrink-0"
         >
-          <ExternalLink className="w-5 h-5" />
+          <ExternalLink className="w-4 h-4" />
         </a>
       </div>
-      <p className="text-foreground/90 leading-relaxed">{description}</p>
+      <p className="text-sm text-foreground/90 leading-snug">{description}</p>
     </div>
   );
 }
