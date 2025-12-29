@@ -186,14 +186,28 @@ export default function Home() {
             />
 
             <ExperienceItem
-              title="Full-stack Software Engineer"
-              company="Freelance"
-              location="Remote, Kenya"
-              period="May 2024 – May 2025"
+              title="Software Engineer"
+              company="Mwewasco (Government Institution)"
+              location="Nairobi, Kenya"
+              period="Sep 2024 – Present"
               responsibilities={[
-                "Designed and built comprehensive web applications for clients using a range of technologies including Django, React, and PHP, with a focus on creating reliable and responsive backend logic and APIs.",
-                "Optimized SQL and NoSQL database schemas (PostgreSQL, MySQL) for performance and scalability, and deployed applications using Docker, CI/CD pipelines, and AWS (EC2/S3).",
-                "Integrated advanced AI-based features, including LLMs and LangChain, and connected with third-party APIs to extend application functionality."
+                "Architected and developed Water Audit Software: full-stack Dockerized system (Django REST, PostgreSQL, Celery, Redis, Nginx) for bulk CSV ingestion, data analysis, and reporting.",
+                "Designed async task pipeline with Celery for processing large CSV files (age analysis, account balances, verification reports) with real-time progress tracking and error logging.",
+                "Implemented dynamic schema inference engine to handle arbitrary CSV structures, automatically normalizing data and generating insights and comparison reports.",
+                "Built rich querying layer with JWT authentication, search/filtering, aggregation, and CSV export capabilities for analytics dashboards."
+              ]}
+            />
+
+            <ExperienceItem
+              title="Full-Stack Developer"
+              company="Talent Lance (Client Project)"
+              location="Remote"
+              period="Aug 2024 – Present"
+              responsibilities={[
+                "Developed marketplace backend (Django DRF) with custom user model, role-based access control (admin/developer/client), and multi-tenant architecture.",
+                "Designed ticketing system with workflow automation, developer assignment, file attachments, and validation; built CMS for FAQs and tips.",
+                "Implemented payment domain: transactions, invoices, payout cycles, developer payouts with multiple payment methods and urgent payment requests.",
+                "Built analytics and reporting service for client and developer statistics, billing insights, and performance metrics."
               ]}
             />
 
@@ -213,17 +227,11 @@ export default function Home() {
         {/* Projects */}
         <section ref={addToRefs} className="mb-16 fade-in">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 text-center">
-            Featured Projects
+            Notable Projects
           </h2>
           <div className="divider-elegant mb-6" />
           
           <div className="space-y-6">
-            <ProjectItem
-              title="Django Mpesa Integration"
-              description="Developed a web application that integrates the Mpesa payment gateway with Django, enabling seamless and secure mobile money transactions. This project includes secure transaction processing and a RESTful API for mobile development."
-              link="https://github.com/pete-mwendia/django-mpesa"
-            />
-            
             <ProjectItem
               title="Feature Extraction System using CNN and Scikit-learn"
               description="Developed a system that leverages Convolutional Neural Networks (CNN) and Scikit-learn for extracting and analyzing features from images. This project showcases a robust pipeline for preprocessing, feature extraction, and classification."
