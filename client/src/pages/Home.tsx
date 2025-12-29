@@ -100,7 +100,7 @@ export default function Home() {
               asChild
               className="hover:bg-accent/10 hover:border-accent transition-all duration-300"
             >
-              <a href="https://www.linkedin.com/in/peter-mwendia-a2749323a/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/peter-mwendia/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </a>
@@ -111,7 +111,7 @@ export default function Home() {
               asChild
               className="hover:bg-accent/10 hover:border-accent transition-all duration-300"
             >
-              <a href="https://github.com/pete-mwendia" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/mwendiaeng" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
               </a>
@@ -235,7 +235,7 @@ export default function Home() {
             <ProjectItem
               title="Feature Extraction System using CNN and Scikit-learn"
               description="Developed a system that leverages Convolutional Neural Networks (CNN) and Scikit-learn for extracting and analyzing features from images. This project showcases a robust pipeline for preprocessing, feature extraction, and classification."
-              link="https://github.com/pete-mwendia/feature-extraction"
+              link="https://github.com/mwendiaeng/feature-extraction-using-cnn-and-scikit-learn"
             />
           </div>
         </section>
