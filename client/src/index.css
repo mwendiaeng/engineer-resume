@@ -157,3 +157,67 @@
     margin: 0 auto;
   }
 }
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* kill decorative overlays/background layers */
+  .absolute,
+  .bg-gradient-to-b {
+    display: none !important;
+  }
+
+  /* hide floating print button */
+  .fixed {
+    display: none !important;
+  }
+
+  /* IMPORTANT: remove viewport height constraints */
+  .min-h-screen {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  /* tighten spacing (your mb-16 is huge for print) */
+  .mb-16 { margin-bottom: 12px !important; }
+  .py-16 { padding-top: 8px !important; padding-bottom: 8px !important; }
+
+  /* shrink typography for print */
+  h1 { font-size: 22px !important; margin-bottom: 4px !important; }
+  h2 { font-size: 14px !important; margin-bottom: 6px !important; }
+  h3 { font-size: 12px !important; margin-bottom: 4px !important; }
+  p, li { font-size: 10.5px !important; line-height: 1.25 !important; }
+
+  /* don’t force “avoid break” on every section (this causes page explosion) */
+  section {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  /* only protect items that must stay together */
+  .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* remove shadows/hover artifacts */
+  .shadow-lg, .hover\:shadow-xl, .hover\:shadow-sm {
+    box-shadow: none !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}
